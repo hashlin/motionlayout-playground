@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layoutDescription="@xml/scene_3_images_bottom_row_with_rotate"
+    >
+
+
+  <ImageView
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="16:9"
+      android:id="@+id/image_left_bottom"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      />
+
+
+
+  <ImageView
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="16:9"
+      android:id="@+id/image_center"
+      android:layout_width="64dp"
+      android:layout_height="0dp"
+      />
+
+
+
+
+
+  <ImageView
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="16:9"
+      android:id="@+id/image_right_bottom"
+      android:layout_width="64dp"
+      android:layout_height="0dp"
+      />
+
+
+
+  <ImageView
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="16:9"
+      android:id="@+id/image_future_right_bottom"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      />
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ML Playground</string>
+  <string name="stack_view">Stack View</string>
+</resources>

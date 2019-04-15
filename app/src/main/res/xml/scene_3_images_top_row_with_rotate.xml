@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/tools">
+  <Transition
+      android:id="@+id/transition_start_to_end"
+      app:constraintSetEnd="@+id/end"
+      app:constraintSetStart="@+id/start">
+    <OnSwipe
+        motion:dragDirection="dragLeft"
+        motion:touchAnchorId="@+id/image_center"
+        motion:touchAnchorSide="left"/>
+  </Transition>
+  <ConstraintSet android:id="@+id/start">
+    <Constraint
+        android:id="@+id/image_left_top"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:rotation="-30"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintBottom_toTopOf="@+id/image_center"
+        app:layout_constraintEnd_toStartOf="@+id/image_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_center"/>
+
+    <Constraint
+        android:id="@+id/image_center"
+        android:layout_width="450dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:rotation="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Constraint
+        android:id="@+id/image_right_top"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:elevation="0dp"
+        android:rotation="40"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <Constraint
+        android:id="@+id/image_future_right_top"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"/>
+
+  </ConstraintSet>
+
+  <ConstraintSet android:id="@+id/end">
+    <Constraint
+        android:id="@+id/image_left_top"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"/>
+
+    <Constraint
+        android:id="@+id/image_center"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:elevation="0dp"
+        android:rotation="3"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Constraint
+        android:id="@+id/image_right_top"
+        android:layout_width="450dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:rotation="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Constraint
+        android:id="@+id/image_future_right_top"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:rotation="40"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintStart_toEndOf="@+id/image_right_top"
+        />
+  </ConstraintSet>
+</MotionScene>
