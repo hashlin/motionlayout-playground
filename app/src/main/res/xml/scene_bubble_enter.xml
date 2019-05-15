@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" app:defaultDuration="2000">
+    xmlns:app="http://schemas.android.com/apk/res-auto" app:defaultDuration="1000">
   <Transition
       android:id="@+id/transition"
       app:constraintSetEnd="@+id/end"
+      app:motionInterpolator="easeInOut"
       app:constraintSetStart="@+id/start">
     <OnClick
         app:clickAction="toggle"
@@ -85,14 +86,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </Constraint>
 
     <Constraint
         android:id="@+id/fabEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/fabCancel"
         app:layout_constraintStart_toEndOf="@+id/fabCancel"
         app:layout_constraintTop_toTopOf="@+id/fabCancel"/>
@@ -101,7 +101,7 @@
         android:id="@+id/fabDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/fabEdit"
         app:layout_constraintStart_toEndOf="@+id/fabEdit"
         app:layout_constraintTop_toTopOf="@+id/fabEdit"/>

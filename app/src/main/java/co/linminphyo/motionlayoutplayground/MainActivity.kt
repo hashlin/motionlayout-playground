@@ -39,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         btnBubbleIn.setOnClickListener {
             startActivity(Intent(this, BubblesActivity::class.java))
         }
+
+        btnDrawer.setOnClickListener {
+            startActivity(Intent(this, NavigationDrawerActivity::class.java))
+        }
     }
 
 }

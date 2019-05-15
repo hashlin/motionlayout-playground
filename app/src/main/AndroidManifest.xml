@@ -27,6 +27,7 @@
     <activity android:name=".CreditCardActivity"/>
     <activity android:name=".LightingActivity"/>
     <activity android:name=".BubblesActivity"/>
+    <activity android:name=".NavigationDrawerActivity"/>
   </application>
 
 </manifest>
