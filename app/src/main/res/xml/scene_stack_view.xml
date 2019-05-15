@@ -1,257 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+             xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <Transition
-      android:id="@+id/transition_view_one_out"
-      app:constraintSetEnd="@id/state_view_one_move_out"
-      app:constraintSetStart="@id/state_initial">
-    <OnSwipe
-        app:dragDirection="dragLeft"
-        app:touchAnchorId="@+id/view_one"
-        app:touchAnchorSide="left"/>
-  </Transition>
+    <Transition
+            android:id="@+id/transition_view_one_out"
+            app:constraintSetEnd="@id/state_view_one_move_out"
+            app:constraintSetStart="@id/state_initial">
+        <OnSwipe
+                app:dragDirection="dragLeft"
+                app:touchAnchorId="@+id/view_one"
+                app:touchAnchorSide="left"/>
+    </Transition>
 
-  <Transition
-      android:id="@+id/transition_view_two_out"
-      app:constraintSetEnd="@id/state_view_two_move_out"
-      app:constraintSetStart="@id/state_view_one_move_out">
-    <OnSwipe
-        app:dragDirection="dragLeft"
-        app:touchAnchorId="@+id/view_two"
-        app:touchAnchorSide="left"/>
-  </Transition>
-
-
-  <Transition
-      android:id="@+id/transition_view_three_out"
-      app:constraintSetEnd="@id/state_view_three_move_out"
-      app:constraintSetStart="@id/state_view_two_move_out">
-    <OnSwipe
-        app:dragDirection="dragLeft"
-        app:touchAnchorId="@+id/view_three"
-        app:touchAnchorSide="left"/>
-  </Transition>
-
-  <Transition
-      android:id="@+id/transition_view_four_out"
-      app:constraintSetEnd="@id/state_initial"
-      app:constraintSetStart="@id/state_view_three_move_out">
-    <OnSwipe
-        app:dragDirection="dragLeft"
-        app:touchAnchorId="@+id/view_four"
-        app:touchAnchorSide="left"/>
-  </Transition>
+    <Transition
+            android:id="@+id/transition_view_two_out"
+            app:constraintSetEnd="@id/state_view_two_move_out"
+            app:constraintSetStart="@id/state_view_one_move_out">
+        <OnSwipe
+                app:dragDirection="dragLeft"
+                app:touchAnchorId="@+id/view_two"
+                app:touchAnchorSide="left"/>
+    </Transition>
 
 
-  <ConstraintSet android:id="@+id/state_initial">
+    <Transition
+            android:id="@+id/transition_view_three_out"
+            app:constraintSetEnd="@id/state_view_three_move_out"
+            app:constraintSetStart="@id/state_view_two_move_out">
+        <OnSwipe
+                app:dragDirection="dragLeft"
+                app:touchAnchorId="@+id/view_three"
+                app:touchAnchorSide="left"/>
+    </Transition>
 
-    <Constraint
-        android:id="@+id/view_four"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="4dp"
-        android:rotation="10"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Constraint
-        android:id="@+id/view_one"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="20dp"
-        android:rotation="-4"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Constraint
-        android:id="@+id/view_two"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="15dp"
-        android:rotation="4"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <Transition
+            android:id="@+id/transition_view_four_out"
+            app:constraintSetEnd="@id/state_initial"
+            app:constraintSetStart="@id/state_view_three_move_out">
+        <OnSwipe
+                app:dragDirection="dragLeft"
+                app:touchAnchorId="@+id/view_four"
+                app:touchAnchorSide="left"/>
+    </Transition>
 
 
-    <Constraint
-        android:id="@+id/view_three"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="6dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <ConstraintSet android:id="@+id/state_initial">
+
+        <Constraint
+                android:id="@+id/view_four"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="4dp"
+                android:rotation="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+                android:id="@+id/view_one"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="20dp"
+                android:rotation="-4"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+                android:id="@+id/view_two"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="15dp"
+                android:rotation="4"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-  </ConstraintSet>
-
-  <ConstraintSet android:id="@+id/state_view_one_move_out">
-    <Constraint
-        android:id="@+id/view_one"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="20dp"
-        android:rotation="10"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Constraint
-        android:id="@+id/view_two"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="20dp"
-        android:rotation="3"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+                android:id="@+id/view_three"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="6dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <Constraint
-        android:id="@+id/view_three"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="15dp"
-        android:rotation="-3"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/state_view_one_move_out">
+        <Constraint
+                android:id="@+id/view_one"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="20dp"
+                android:rotation="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+                android:id="@+id/view_two"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="20dp"
+                android:rotation="3"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <Constraint
-        android:id="@+id/view_four"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="6dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-  </ConstraintSet>
-
-  <ConstraintSet android:id="@+id/state_view_two_move_out">
-
-    <Constraint
-        android:id="@+id/view_two"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="20dp"
-        android:rotation="5"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+                android:id="@+id/view_three"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="15dp"
+                android:rotation="-3"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <Constraint
-        android:id="@+id/view_three"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="20dp"
-        android:rotation="3"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+                android:id="@+id/view_four"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="6dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/state_view_two_move_out">
+
+        <Constraint
+                android:id="@+id/view_two"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="20dp"
+                android:rotation="5"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <Constraint
-        android:id="@+id/view_four"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="15dp"
-        android:rotation="-3"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Constraint
-        android:id="@+id/view_one"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="6dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+                android:id="@+id/view_three"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="20dp"
+                android:rotation="3"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-  </ConstraintSet>
+        <Constraint
+                android:id="@+id/view_four"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="15dp"
+                android:rotation="-3"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
-  <ConstraintSet android:id="@+id/state_view_three_move_out">
-
-
-    <Constraint
-        android:id="@+id/view_three"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="15dp"
-        android:rotation="10"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-
-    <Constraint
-        android:id="@+id/view_four"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="20dp"
-        android:rotation="-4"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Constraint
-        android:id="@+id/view_one"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="15dp"
-        android:rotation="4"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+                android:id="@+id/view_one"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="6dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <Constraint
-        android:id="@+id/view_two"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:elevation="6dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    </ConstraintSet>
 
-  </ConstraintSet>
+    <ConstraintSet android:id="@+id/state_view_three_move_out">
+
+
+        <Constraint
+                android:id="@+id/view_three"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="15dp"
+                android:rotation="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <Constraint
+                android:id="@+id/view_four"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="20dp"
+                android:rotation="-4"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+                android:id="@+id/view_one"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="15dp"
+                android:rotation="4"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <Constraint
+                android:id="@+id/view_two"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:elevation="6dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </ConstraintSet>
 
 
 </MotionScene>

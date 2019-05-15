@@ -8,4 +8,8 @@
     <color name="colorTwo">#607d8b</color>
     <color name="colorThree">#009688</color>
     <color name="colorFour">#795548</color>
+
+
+    <color name="colorOverlaySoft">#30000000</color>
+    <color name="colorOverlayDark">#40000000</color>
 </resources>

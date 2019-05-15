@@ -3,6 +3,7 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp"
     >
 
@@ -13,4 +14,45 @@
       android:text="@string/stack_view"
       />
 
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnDynamicStackView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/dynamic_stack_view"
+      />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnScaleImage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/scale_image"
+      />
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnShapeMorph"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/shape_morph"
+      />
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnCreditCards"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Credit Cards"
+      />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnLighting"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Lighting"
+      />
+
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnBubbleIn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Bubbles"
+      />
 </LinearLayout>

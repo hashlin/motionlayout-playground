@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" app:defaultDuration="600" >
+
+  <Transition
+      android:id="@+id/transition"
+      app:constraintSetEnd="@+id/stateExpanded"
+      app:constraintSetStart="@+id/stateCollapsed">
+    <OnSwipe
+        app:dragDirection="dragDown"
+        app:touchRegionId="@+id/cardOne"
+        />
+  </Transition>
+
+  <ConstraintSet android:id="@+id/stateCollapsed" >
+    <Constraint android:id="@+id/cardOne">
+      <Layout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintVertical_bias=".6"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
+      <Transform android:elevation="6dp"  android:rotation="90"/>
+    </Constraint>
+
+    <Constraint android:id="@+id/cardTwo" >
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintVertical_bias=".55"/>
+      <Transform android:elevation="4dp" android:rotation="90"/>
+    </Constraint>
+
+    <Constraint android:id="@+id/cardThree">
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintVertical_bias=".5"/>
+      <Transform android:elevation="2dp"  android:rotation="90"/>
+    </Constraint>
+
+  </ConstraintSet>
+
+
+  <ConstraintSet android:id="@+id/stateExpanded">
+    <Constraint android:id="@+id/cardOne" >
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias=".7"/>
+      <Transform
+          android:rotationX="-20"
+          android:scaleX=".85"
+          android:rotation="90"
+          android:elevation="20dp"/>
+    </Constraint>
+    <Constraint android:id="@+id/cardTwo" >
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias=".5"/>
+      <Transform
+          android:rotationX="-15"
+          android:scaleX=".85"
+          android:rotation="90"
+          android:elevation="15dp"/>
+    </Constraint>
+
+    <Constraint android:id="@+id/cardThree" >
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintVertical_bias=".3"/>
+      <Transform
+          android:rotationX="-10"
+          android:scaleX=".85"
+          android:rotation="90"
+          android:elevation="10dp"/>
+    </Constraint>
+  </ConstraintSet>
+
+</MotionScene>

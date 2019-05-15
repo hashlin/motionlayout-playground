@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" app:defaultDuration="2000">
+  <Transition
+      android:id="@+id/transition"
+      app:constraintSetEnd="@+id/end"
+      app:constraintSetStart="@+id/start">
+    <OnClick
+        app:clickAction="toggle"
+        app:targetId="@+id/btnToggle"/>
+
+    <KeyFrameSet>
+      <KeyPosition
+          app:motionTarget="@+id/fabCancel"
+          app:framePosition="25"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="0.15"/>
+      <KeyPosition
+          app:motionTarget="@+id/fabCancel"
+          app:framePosition="50"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="-0.15"/>
+
+      <KeyPosition
+          app:motionTarget="@+id/fabCancel"
+          app:framePosition="75"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="0.15"/>
+
+
+
+      <KeyPosition
+          app:motionTarget="@+id/fabEdit"
+          app:framePosition="35"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="0.15"/>
+      <KeyPosition
+          app:motionTarget="@+id/fabEdit"
+          app:framePosition="60"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="-0.15"/>
+
+      <KeyPosition
+          app:motionTarget="@+id/fabEdit"
+          app:framePosition="85"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="0.15"/>
+
+
+
+
+      <KeyPosition
+          app:motionTarget="@+id/fabDelete"
+          app:framePosition="45"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="0.15"/>
+      <KeyPosition
+          app:motionTarget="@+id/fabDelete"
+          app:framePosition="70"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="-0.15"/>
+
+      <KeyPosition
+          app:motionTarget="@+id/fabDelete"
+          app:framePosition="95"
+          app:keyPositionType="pathRelative"
+          app:pathMotionArc="startHorizontal"
+          app:percentY="0.15"/>
+    </KeyFrameSet>
+  </Transition>
+
+  <ConstraintSet android:id="@+id/start">
+    <Constraint
+        android:id="@+id/fabCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Constraint>
+
+    <Constraint
+        android:id="@+id/fabEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fabCancel"
+        app:layout_constraintStart_toEndOf="@+id/fabCancel"
+        app:layout_constraintTop_toTopOf="@+id/fabCancel"/>
+
+    <Constraint
+        android:id="@+id/fabDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fabEdit"
+        app:layout_constraintStart_toEndOf="@+id/fabEdit"
+        app:layout_constraintTop_toTopOf="@+id/fabEdit"/>
+  </ConstraintSet>
+
+
+  <ConstraintSet
+      android:id="@+id/end"
+      app:deriveConstraintsFrom="@+id/start">
+    <Constraint
+        android:id="@+id/fabCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Constraint>
+
+  </ConstraintSet>
+
+</MotionScene>

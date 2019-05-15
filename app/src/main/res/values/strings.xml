@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ML Playground</string>
   <string name="stack_view">Stack View</string>
+  <string name="dynamic_stack_view">Dynamic Stack View</string>
+  <string name="scale_image">Scale Image</string>
+  <string name="shape_morph">Shape Morph</string>
 </resources>

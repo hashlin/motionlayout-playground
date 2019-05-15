@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/scene_stack_view"
@@ -12,7 +14,16 @@
       android:layout_height="100dp"
       app:cardBackgroundColor="@color/colorOne"
       app:cardCornerRadius="8dp"
-      />
+      >
+    <TextView
+        android:id="@+id/tv_one"
+        tools:text="Apple"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+  </com.google.android.material.card.MaterialCardView>
 
   <com.google.android.material.card.MaterialCardView
       android:id="@+id/view_two"
@@ -20,7 +31,16 @@
       android:layout_height="100dp"
       app:cardBackgroundColor="@color/colorTwo"
       app:cardCornerRadius="8dp"
-      />
+      >
+    <TextView
+        android:id="@+id/tv_two"
+        tools:text="Apple"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+  </com.google.android.material.card.MaterialCardView>
+
 
   <com.google.android.material.card.MaterialCardView
       android:id="@+id/view_three"
@@ -28,13 +48,29 @@
       android:layout_height="100dp"
       app:cardBackgroundColor="@color/colorThree"
       app:cardCornerRadius="8dp"
-      />
+      >
+    <TextView
+        android:id="@+id/tv_three"
+        tools:text="Apple"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+  </com.google.android.material.card.MaterialCardView>
   <com.google.android.material.card.MaterialCardView
       android:id="@+id/view_four"
       android:layout_width="100dp"
       android:layout_height="100dp"
       app:cardBackgroundColor="@color/colorFour"
       app:cardCornerRadius="8dp"
-      />
+      >
+    <TextView
+        android:id="@+id/tv_four"
+        tools:text="Apple"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+  </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:layoutDescription="@xml/scene_shape_morph"
+    android:layout_height="match_parent"
+    >
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/card"
+      android:layout_width="120dp"
+      app:cardBackgroundColor="?attr/colorAccent"
+      android:layout_height="120dp"
+      />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

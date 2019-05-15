@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <Transition
+      android:id="@+id/transition"
+      app:constraintSetEnd="@+id/stateTwo"
+      app:constraintSetStart="@+id/stateOne">
+    <OnClick
+        app:clickAction="toggle"
+        app:targetId="@+id/card"/>
+  </Transition>
+
+  <ConstraintSet android:id="@+id/stateOne">
+    <Constraint android:id="@+id/card">
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_height="120dp"
+          android:layout_width="120dp">
+      </Layout>
+      <CustomAttribute
+          app:attributeName="cardCornerRadius"
+          app:customDimension="250dp"/>
+      <CustomAttribute
+          app:attributeName="cardCornerRadius"
+          app:customPixelDimension="250dp"/>
+    </Constraint>
+  </ConstraintSet>
+
+  <ConstraintSet android:id="@+id/stateTwo">
+    <Constraint android:id="@+id/card">
+      <Layout
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_height="240dp"
+          android:layout_width="240dp">
+      </Layout>
+      <CustomAttribute
+          app:attributeName="cardCornerRadius"
+          app:customDimension="10dp"/>
+      <CustomAttribute
+          app:attributeName="cardCornerRadius"
+          app:customPixelDimension="10dp"/>
+    </Constraint>
+  </ConstraintSet>
+
+</MotionScene>

@@ -20,6 +20,13 @@
     <activity
         android:name=".CardStackActivity"
         android:theme="@style/AppTheme.FullScreen"/>
+      <activity android:name=".DynamicCardStackActivity"/>
+    <activity android:name=".ScaleImageActivity"/>
+      <activity android:name=".DragWithDifferentInterpolator"/>
+    <activity android:name=".ShapeMorphActivity"/>
+    <activity android:name=".CreditCardActivity"/>
+    <activity android:name=".LightingActivity"/>
+    <activity android:name=".BubblesActivity"/>
   </application>
 
 </manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <Transition
+      android:id="@+id/transition"
+      app:constraintSetEnd="@+id/end"
+      app:constraintSetStart="@+id/start"
+      app:duration="2000">
+    <OnClick
+        app:clickAction="toggle"
+        app:targetId="@+id/button"/>
+  </Transition>
+
+  <ConstraintSet android:id="@+id/start">
+    <Constraint android:id="@+id/bulb">
+      <CustomAttribute
+          app:attributeName="colorFilter"
+          app:customColorValue="#ffffff"/>
+    </Constraint>
+
+    <Constraint android:id="@+id/background">
+      <PropertySet android:alpha="0"/>
+    </Constraint>
+
+  </ConstraintSet>
+
+  <ConstraintSet android:id="@+id/end">
+    <Constraint android:id="@+id/bulb">
+      <CustomAttribute
+          app:attributeName="colorFilter"
+          app:customColorDrawableValue="#FFECAA"/>
+    </Constraint>
+
+    <Constraint android:id="@+id/background">
+      <PropertySet android:alpha="1"/>
+    </Constraint>
+  </ConstraintSet>
+</MotionScene>
