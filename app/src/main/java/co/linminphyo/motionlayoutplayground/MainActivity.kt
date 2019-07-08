@@ -3,6 +3,7 @@ package co.linminphyo.motionlayoutplayground
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import co.linminphyo.motionlayoutplayground.recyclerview.RecyclerViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,10 +16,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CardStackActivity::class.java))
         }
 
-
-        btnDynamicStackView.setOnClickListener {
-            startActivity(Intent(this, DynamicCardStackActivity::class.java))
-        }
 
         btnScaleImage.setOnClickListener {
             startActivity(Intent(this, ScaleImageActivity::class.java))
@@ -42,6 +39,14 @@ class MainActivity : AppCompatActivity() {
 
         btnDrawer.setOnClickListener {
             startActivity(Intent(this, NavigationDrawerActivity::class.java))
+        }
+
+        btnFlow.setOnClickListener {
+            startActivity(Intent(this, FlowActivity::class.java))
+        }
+
+        btnRecyclerView.setOnClickListener {
+            startActivity(Intent(this, RecyclerViewActivity::class.java))
         }
     }
 

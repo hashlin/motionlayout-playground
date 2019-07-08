@@ -4,11 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * Created by lin min phyo on 2019-05-12.
+ * Created by lin min phyo on 2019-05-21.
  */
-class RecyclerViewActivity : AppCompatActivity(){
+class FlowActivity : AppCompatActivity(){
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_recycler_view)
+    setContentView(R.layout.activity_flow)
   }
 }

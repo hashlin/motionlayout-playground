@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <Transition
+      android:id="@+id/transition"
+      app:constraintSetEnd="@+id/end"
+      app:constraintSetStart="@+id/start">
+    <OnClick
+        app:clickAction="toggle"
+        app:targetId="@+id/ivOne"/>
+  </Transition>
+
+  <ConstraintSet android:id="@+id/start">
+    <Constraint android:id="@+id/ivOne">
+      <Layout
+          android:layout_width="80dp"
+          android:layout_height="0dp"
+          app:layout_constraintDimensionRatio="1:1"/>
+    </Constraint>
+  </ConstraintSet>
+
+
+  <ConstraintSet android:id="@+id/end">
+    <Constraint android:id="@+id/ivOne">
+      <Layout
+          android:layout_width="160dp"
+          android:layout_height="0dp"
+          app:layout_constraintDimensionRatio="1:1"/>
+    </Constraint>
+  </ConstraintSet>
+</MotionScene>

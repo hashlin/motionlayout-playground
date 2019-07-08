@@ -2,16 +2,29 @@
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="128dp"
     app:layoutDescription="@xml/scene_bubble_enter"
     >
 
+  <View
+      android:id="@+id/viewBackground"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="8dp"
+      android:background="#e0e0e0"
+      android:text="Toggle"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
   <com.google.android.material.floatingactionbutton.FloatingActionButton
       android:id="@+id/fabCancel"
-      android:tint="#ffffff"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:src="@drawable/ic_close"
+      android:tint="#ffffff"
       app:fabSize="mini"
       />
 
@@ -19,8 +32,8 @@
       android:id="@+id/fabEdit"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:tint="#ffffff"
       android:src="@drawable/ic_edit"
+      android:tint="#ffffff"
       app:fabSize="mini"
       />
 
@@ -28,19 +41,20 @@
       android:id="@+id/fabDelete"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:tint="#ffffff"
       android:src="@drawable/ic_delete"
+      android:tint="#ffffff"
       app:fabSize="mini"
       />
 
-  <com.google.android.material.button.MaterialButton
-      android:id="@+id/btnToggle"
+  <ImageView
+      android:id="@+id/ivMore"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_margin="16dp"
-      android:text="Toggle"
+      android:layout_marginBottom="8dp"
+      android:layout_marginEnd="32dp"
+      android:src="@drawable/ic_more"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/viewBackground"
+      app:layout_constraintTop_toTopOf="parent"
       />
 </androidx.constraintlayout.motion.widget.MotionLayout>

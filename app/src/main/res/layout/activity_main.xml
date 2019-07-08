@@ -14,14 +14,6 @@
       android:text="@string/stack_view"
       />
 
-
-  <com.google.android.material.button.MaterialButton
-      android:id="@+id/btnDynamicStackView"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/dynamic_stack_view"
-      />
-
   <com.google.android.material.button.MaterialButton
       android:id="@+id/btnScaleImage"
       android:layout_width="match_parent"
@@ -61,5 +53,20 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="Navigation Drawer"
+      />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnFlow"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Gallery Flow"
+      />
+
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Recycler View"
       />
 </LinearLayout>

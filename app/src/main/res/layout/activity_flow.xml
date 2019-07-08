@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:showPaths="true"
+    app:layoutDescription="@xml/scene_flow"
+    >
+
+  <ImageView
+      android:id="@+id/ivOne"
+      android:layout_width="80dp"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="1:1"
+      />
+  <ImageView
+      android:id="@+id/ivTwo"
+      android:layout_width="80dp"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="1:1"
+      />
+  <ImageView
+      android:id="@+id/ivThree"
+      android:layout_width="80dp"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="1:1"
+      />
+  <ImageView
+      android:id="@+id/ivFour"
+      android:layout_width="80dp"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="1:1"
+      />
+  <ImageView
+      android:id="@+id/ivFive"
+      android:layout_width="80dp"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/img_one"
+      app:layout_constraintDimensionRatio="1:1"
+      />
+
+  <androidx.constraintlayout.helper.widget.Flow
+      android:id="@+id/flow"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:constraint_referenced_ids="ivOne , ivTwo , ivThree, ivFour, ivFive"
+      app:flow_horizontalStyle="packed"
+      app:flow_verticalStyle="packed"
+      app:flow_wrapMode="chain"
+      app:flow_horizontalGap="16dp"
+      app:flow_verticalGap="16dp"
+      tools:layout_editor_absoluteX="0dp"
+      />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

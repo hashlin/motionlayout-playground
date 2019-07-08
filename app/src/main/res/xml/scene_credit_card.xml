@@ -64,8 +64,8 @@
           app:layout_constraintVertical_bias=".7"/>
       <Transform
           android:rotationX="-20"
-          android:scaleX=".85"
-          android:rotation="90"
+          android:scaleY=".9"
+          android:rotation="0"
           android:elevation="20dp"/>
     </Constraint>
     <Constraint android:id="@+id/cardTwo" >
@@ -79,8 +79,8 @@
           app:layout_constraintVertical_bias=".5"/>
       <Transform
           android:rotationX="-15"
-          android:scaleX=".85"
-          android:rotation="90"
+          android:scaleY=".9"
+          android:rotation="0"
           android:elevation="15dp"/>
     </Constraint>
 
@@ -95,8 +95,8 @@
           app:layout_constraintVertical_bias=".3"/>
       <Transform
           android:rotationX="-10"
-          android:scaleX=".85"
-          android:rotation="90"
+          android:scaleY=".9"
+          android:rotation="0"
           android:elevation="10dp"/>
     </Constraint>
   </ConstraintSet>
